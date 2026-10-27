@@ -61,7 +61,6 @@
       <a href="#publications">Publications</a>
       <a href="#experience">Experience</a>
       <a href="#teaching">Teaching</a>
-      <a href="#projects">Projects</a>
       <a href="#education">Education</a>
       <a href="#community">Community</a>
       <a href="#beyond">Personal</a>
@@ -82,8 +81,8 @@
           <strong>language models</strong>: how their input units (tokenization) are chosen, how they are adapted and
           fine-tuned, and what their representations encode. My current research, in the ERC-funded LifeLU project with
           Prof. Arzucan Özgür, treats proteins as a
-          language and studies tokenization and adaptation in <strong>protein language models</strong>. In parallel I build
-          NLP for detecting hate speech in Turkish and Arabic in the PARI project.</p>
+          language and studies tokenization and adaptation in <strong>protein language models</strong>. I have also
+          recently joined the PARI project, working on hate-speech detection in Turkish and Arabic.</p>
         <p>Before Boğaziçi I worked on financial NLP at Iran University of Science and Technology and built speech and
           text data pipelines for a Persian speech-recognition product in industry.</p>
       </div>
@@ -152,19 +151,9 @@
             <a href="https://arxiv.org/abs/2610.31454">arXiv</a>
             <a href="https://ellis.eu/events/elsas-health-privacy-challenge-camda-2026">Challenge</a>
             <button class="pub-btn" type="button" aria-expanded="false" aria-controls="abs-camda">Abstract</button>
-            <button class="pub-btn" type="button" aria-expanded="false" aria-controls="bib-camda">BibTeX</button>
           </div>
           <p class="pub-note">We benchmark single-cell RNA-seq generators, including an LLM-based one (Cell2Sentence), for biological utility against membership-inference privacy, and show that how non-highly-variable genes are reconstructed is the main privacy lever.</p>
           <div class="pub-panel" id="abs-camda" hidden><p>Synthetic single-cell RNA-seq data generation offers a promising route for privacy-aware biomedical data sharing, but donor-linked datasets require careful balancing of biological utility and privacy risk. In this work, we benchmark synthetic generation methods for the CAMDA 2026 ELSA Health Privacy Challenge using the donor-split OneK1K dataset, comparing scGFT, scLDM, and Cell2Sentence across statistical fidelity, downstream biological preservation, and membership inference vulnerability. Because full-transcriptome generation is computationally demanding, we focus generative modeling on highly variable genes and evaluate alternative strategies for reconstructing non-HVG expression. Our results show that non-HVG handling is a central determinant of privacy: directly copying non-HVG values leads to severe leakage, whereas Poisson-based reconstruction substantially reduces membership inference risk. We further find that scGFT and scLDM better preserve biological structure than an independent Poisson baseline, while maintaining near-random privacy profiles under appropriate configurations. These findings highlight the importance of evaluating synthetic single-cell data beyond marginal similarity alone, emphasizing robustness, interpretability, and privacy-conscious design choices throughout preprocessing, generation, and post-processing.</p></div>
-          <div class="pub-panel" id="bib-camda" hidden><pre>@misc{giledereli2026benchmarking,
-  title         = {Benchmarking Recent Single-Cell Synthetic Data Generation Methods on the {OneK1K} Dataset},
-  author        = {Giledereli, Buse and Temiz, Ba{\c{s}}ar and Sattarzadeh Khanehbargh, Amirreza},
-  year          = {2026},
-  eprint        = {2610.31454},
-  archivePrefix = {arXiv},
-  primaryClass  = {q-bio.GN},
-  url           = {https://arxiv.org/abs/2610.31454}
-}</pre><button class="copy-btn" type="button">Copy</button></div>
         </div>
       </li>
       <li>
@@ -173,16 +162,6 @@
           <span class="pub-title">Tokenization-Aware Protein Language Modeling with Evolution-Guided Units and Biological Knowledge Fusion</span>
           <span class="pub-authors"><span class="me">Amirreza Sattarzadeh Khanehbargh</span>, Burak Suyunu, Özdeniz Dolu, Arzucan Özgür</span>
           <span class="pub-venue">25th European Conference on Computational Biology (ECCB 2026), Geneva · Poster C-P.51, presented in person</span>
-          <div class="pub-links">
-            <button class="pub-btn" type="button" aria-expanded="false" aria-controls="bib-eccb">BibTeX</button>
-          </div>
-          <div class="pub-panel" id="bib-eccb" hidden><pre>@misc{sattarzadeh2026tokenization,
-  title        = {Tokenization-Aware Protein Language Modeling with Evolution-Guided Units and Biological Knowledge Fusion},
-  author       = {Sattarzadeh Khanehbargh, Amirreza and Suyunu, Burak and Dolu, {\"O}zdeniz and {\"O}zg{\"u}r, Arzucan},
-  howpublished = {Poster C-P.51, 25th European Conference on Computational Biology (ECCB 2026), Geneva},
-  year         = {2026},
-  month        = sep
-}</pre><button class="copy-btn" type="button">Copy</button></div>
         </div>
       </li>
       <li>
@@ -191,16 +170,6 @@
           <span class="pub-title">From Protein Sequences to Biological Language Units: Frequency- and Evolution-Aware Tokenization for Protein Language Models</span>
           <span class="pub-authors"><span class="me">Amirreza Sattarzadeh Khanehbargh</span>, Arzucan Özgür</span>
           <span class="pub-venue">Lectures on Computational Linguistics (LCS 2026), Bolzano, Italy · Accepted poster</span>
-          <div class="pub-links">
-            <button class="pub-btn" type="button" aria-expanded="false" aria-controls="bib-lcs">BibTeX</button>
-          </div>
-          <div class="pub-panel" id="bib-lcs" hidden><pre>@misc{sattarzadeh2026protein,
-  title        = {From Protein Sequences to Biological Language Units: Frequency- and Evolution-Aware Tokenization for Protein Language Models},
-  author       = {Sattarzadeh Khanehbargh, Amirreza and {\"O}zg{\"u}r, Arzucan},
-  howpublished = {Poster, Lectures on Computational Linguistics (LCS 2026), Bolzano, Italy},
-  year         = {2026},
-  month        = jun
-}</pre><button class="copy-btn" type="button">Copy</button></div>
         </div>
       </li>
       <li>
@@ -212,32 +181,12 @@
           <div class="pub-links">
             <a href="https://arxiv.org/abs/2502.14897">arXiv</a>
             <button class="pub-btn" type="button" aria-expanded="false" aria-controls="abs-fin">Abstract</button>
-            <button class="pub-btn" type="button" aria-expanded="false" aria-controls="bib-fin">BibTeX</button>
           </div>
           <p class="pub-note">Labels social-media posts by the market move that follows them instead of human sentiment labels and fine-tunes domain language models on these labels: up to +11% trend-prediction accuracy, and 89.6% with market and temporal context in the prompt.</p>
           <div class="pub-panel" id="abs-fin" hidden><p>Financial Sentiment Analysis (FSA) traditionally relies on human-annotated sentiment labels to infer investor sentiment and forecast market movements. However, inferring the potential market impact of words based on their human-perceived intentions is inherently challenging. We hypothesize that the historical market reactions to words, offer a more reliable indicator of their potential impact on markets than subjective sentiment interpretations by human annotators. To test this hypothesis, a market-derived labeling approach is proposed to assign tweet labels based on ensuing short-term price trends, enabling the language model to capture the relationship between textual signals and market dynamics directly. A domain-specific language model was fine-tuned on these labels, achieving up to an 11% improvement in short-term trend prediction accuracy over traditional sentiment-based benchmarks. Moreover, by incorporating market and temporal context through prompt-tuning, the proposed context-aware language model demonstrated an accuracy of 89.6% on a curated dataset of 227 impactful Bitcoin-related news events with significant market impacts. Aggregating daily tweet predictions into trading signals, our method outperformed traditional fusion models (which combine sentiment-based and price-based predictions). It challenged the assumption that sentiment-based signals are inferior to price-based predictions in forecasting market movements. Backtesting these signals across three distinct market regimes yielded robust Sharpe ratios of up to 5.07 in trending markets and 3.73 in neutral markets. Our findings demonstrate that language models can serve as effective short-term market predictors. This paradigm shift underscores the untapped capabilities of language models in financial decision-making and opens new avenues for market prediction applications.</p></div>
-          <div class="pub-panel" id="bib-fin" hidden><pre>@misc{moradikamali2025market,
-  title         = {Market-Derived Financial Sentiment Analysis: Context-Aware Language Models for Crypto Forecasting},
-  author        = {Moradi-Kamali, Hamid and Rajabi-Ghozlou, Mohammad-Hossein and Ghazavi, Mahdi and Soltani, Ali and Sattarzadeh, Amirreza and Entezari-Maleki, Reza},
-  year          = {2025},
-  eprint        = {2502.14897},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CE},
-  url           = {https://arxiv.org/abs/2502.14897}
-}</pre><button class="copy-btn" type="button">Copy</button></div>
         </div>
       </li>
     </ol>
-
-    <h2 style="margin-top:2.2rem">Talks</h2>
-    <p>Weekly TabiLab / LifeLU reading club at Boğaziçi University: one member presents a paper each week, and I present
-      every few weeks on PLM fine-tuning, tokenization methods, dynamic tokenization, infusing protein dynamics into PLMs
-      and token interpretability. Examples:</p>
-    <ul class="plain">
-      <li><em>Task- and dataset-specific information in protein language models</em> (Joeres et al., 2026), Aug 2026.</li>
-      <li><em>Fine-tuning protein language models</em> (Schmirler et al., 2024), 2026.</li>
-      <li>DynamicsPLM, 2026.</li>
-    </ul>
   </section>
 
   <!-- ============ experience ============ -->
@@ -248,10 +197,10 @@
       <div class="entry-head"><h3>Graduate Research Assistant, LifeLU (ERC Consolidator Grant)</h3><span class="date">Oct 2024 – present</span></div>
       <p class="entry-sub">TabiLab, Boğaziçi University · PI: Prof. Arzucan Özgür · <em>Understanding the Language of Life: Identifying and Characterizing the Language Units in Protein Sequences</em></p>
       <ul>
-        <li>Study how tokenization interacts with adaptation in protein language models: amino-acid, BPE/Unigram and evolution-aware PUMA/evoBPE units with vocabularies from 800 to 51,200 tokens, under frozen-encoder, full fine-tuning and LoRA regimes, across ESM-2, ProtT5 and ProLLaMA.</li>
-        <li>Built and ran a benchmark of <strong>6,500+ training runs</strong> of ESM-2 models on <strong>14 PETA tasks</strong> (function, localization, stability), analysing vocabulary size, pooling heads, normalized perplexity, and memory and compute cost. Mutation-aware PUMA units outperform frequency-based subwords in several settings and can match or surpass amino-acid tokens at certain vocabulary sizes.</li>
-        <li>Tested biological knowledge fusion: predicted protein-dynamics features added to PLM representations. Next step: interpretability of what the learned units encode.</li>
-        <li>Weekly team reading club (one member presents a paper each week); I present every few weeks on PLM fine-tuning, tokenization methods, dynamic tokenization, infusing protein dynamics and token interpretability.</li>
+        <li>Study how tokenization (amino-acid, subword and evolution-aware units) interacts with fine-tuning and parameter-efficient adaptation in protein language models.</li>
+        <li>Built a large-scale benchmark on protein function, localization and stability prediction; evolution-aware units outperform frequency-based subwords in several settings.</li>
+        <li>Explored adding biological knowledge (protein dynamics) to PLM representations. Next step: interpretability of what the learned units encode.</li>
+        <li>Regular presenter in the team's weekly reading club.</li>
       </ul>
     </div>
 
@@ -259,8 +208,7 @@
       <div class="entry-head"><h3>Developer and Researcher, <a href="https://pari.hrantdink.org/en/home/">PARI</a> project</h3><span class="date">Oct 2026 – present</span></div>
       <p class="entry-sub">Hrant Dink Foundation with Boğaziçi and Sabancı universities, Istanbul · funded by the European Union and the Friedrich Naumann Foundation</p>
       <ul>
-        <li>Open-source NLP tool for detecting discriminatory and offensive content (hate speech) in Turkish and Arabic.</li>
-        <li>Sole student researcher on the project, working with its faculty, postdoctoral and PhD researchers.</li>
+        <li>Recently joined as the project's student researcher, working with its faculty, postdoctoral and PhD researchers on an open-source NLP tool for detecting hate speech and discriminatory content in Turkish and Arabic.</li>
       </ul>
     </div>
 
@@ -268,9 +216,8 @@
       <div class="entry-head"><h3>Team member, ELSA Health Privacy Challenge, CAMDA 2026 at ISMB 2026</h3><span class="date">2026</span></div>
       <p class="entry-sub">Organised by EMBL, CISPA Helmholtz Center and the University of Helsinki within the EU ELSA project</p>
       <ul>
-        <li>Equal-contribution first author with Buse Giledereli and Başar Temiz. Benchmarked single-cell RNA-seq synthetic data generators (scGFT, scLDM, Cell2Sentence and a Poisson baseline) on donor-split OneK1K for biological utility versus membership-inference privacy.</li>
-        <li>Main finding: copying non-highly-variable genes makes the attack succeed perfectly (AUC 1.0), while Poisson reconstruction brings it close to random.</li>
-        <li>Our results were selected for a talk at CAMDA 2026 and presented as a talk and a poster at ISMB 2026, Washington, DC (July 2026).</li>
+        <li>Equal-contribution first author with Buse Giledereli and Başar Temiz. Benchmarked single-cell synthetic data generators, including an LLM-based one, for biological utility versus privacy.</li>
+        <li>Selected for a talk at CAMDA 2026 and presented as a talk and a poster at ISMB 2026, Washington, DC (July 2026).</li>
       </ul>
     </div>
 
@@ -278,7 +225,7 @@
       <div class="entry-head"><h3>Research Assistant</h3><span class="date">Jul 2023 – Sep 2024</span></div>
       <p class="entry-sub">Iran University of Science and Technology (IUST), Tehran · Supervisor: Dr. Reza Entezari-Maleki</p>
       <ul>
-        <li><em>Financial market trend analysis using FinBERT and sentiment analysis in online text data</em> (Feb – Sep 2024): labelled posts by the market move that follows them and fine-tuned domain language models on these labels; extended into the arXiv preprint above.</li>
+        <li><em>Financial market trend analysis using FinBERT and sentiment analysis in online text data</em> (Feb – Sep 2024), extended into the arXiv preprint above.</li>
         <li><em>Deep learning and neural networks for algorithmic trading</em> (Jul 2023 – Feb 2024).</li>
       </ul>
     </div>
@@ -291,7 +238,14 @@
       <ul>
         <li><strong>Harf</strong> (Persian speech recognition): built the data pipeline for crawling, cleaning and preprocessing speech–text data, growing the training data in size and quality, which improved the speech models; Django APIs for model deployment.</li>
         <li><strong>Replai</strong> (NLP comment and reply classification): Django backend.</li>
-        <li>My team lead's LinkedIn recommendation credits this data work with significantly improving the speech models.</li>
+        <li>Recommendation from my team lead (LinkedIn, March 2024):
+          <button class="pub-btn" type="button" aria-expanded="false" aria-controls="rec-roshan">Show</button>
+          <div class="pub-panel" id="rec-roshan" hidden>
+            <img class="rec-img" src="recommendation.png" width="1200" height="477" loading="lazy"
+              alt="LinkedIn recommendation from Mohsen Mohammadi, who managed Amirreza directly at Roshan-AI (March 7, 2024). It describes him as a skilled Python developer with a good background in data engineering, and says his work increasing the size and quality of the speech data led to a significant improvement in the performance of the speech models, and that his back-end APIs made it easier to deploy the models in production.">
+            <a href="https://www.linkedin.com/in/amirreza-sattarzadeh/details/recommendations/" rel="noopener">View on LinkedIn</a>
+          </div>
+        </li>
       </ul>
     </div>
 
@@ -343,21 +297,6 @@
     </div>
   </section>
 
-  <!-- ============ projects ============ -->
-  <section id="projects">
-    <h2>Selected projects</h2>
-    <div class="cards">
-      <div class="card"><h3>Turkish NLP toolkit</h3><p>Turkish NLP toolkit built on the UD-Turkish-BOUN treebank (Boğaziçi coursework, 2026).</p></div>
-      <div class="card"><h3>Demographic bias in face recognition</h3><p>ArcFace evaluated on LFW, RFW and BFW/FairFace (Biometrics, 2026).</p></div>
-      <div class="card"><h3>Synthetic scRNA-seq privacy and utility</h3><p>ELSA/EMBL Track II benchmark; see the CAMDA 2026 preprint above.</p></div>
-      <div class="card"><h3>Heritage knowledge system</h3><p>WebProtégé, RDF-star, SPARQL, Apache Jena Fuseki and SHACL (Social Semantic Web, 2026).</p></div>
-      <div class="card"><h3>Quick, Draw! autoencoders</h3><p>GRU and CNN autoencoders with t-SNE analysis of the learned space (Deep Learning, 2026).</p></div>
-      <div class="card"><h3>Protein alignment and phylogeny</h3><p>Needleman–Wunsch, UPGMA and Neighbor-Joining pipeline (Bioinformatics, 2026).</p></div>
-      <div class="card"><h3>MiniPoker agent</h3><p>Game-theoretic agent for MiniPoker (Boğaziçi coursework, 2026).</p></div>
-      <div class="card"><h3>Stock-screening Telegram bot</h3><p>Crawls Iranian stock-market data and screens growth stocks (2019 – 2022).</p></div>
-    </div>
-  </section>
-
   <!-- ============ education ============ -->
   <section id="education">
     <h2>Education</h2>
@@ -366,7 +305,7 @@
       <div class="entry-head"><h3>M.Sc. in Computer Engineering, Boğaziçi University</h3><span class="date">Oct 2024 – expected Jul 2027</span></div>
       <p class="entry-sub">Istanbul, Türkiye · English-taught · Supervisor: Prof. Arzucan Özgür</p>
       <ul><li>Thesis (in progress): <em>From Protein Sequences to Biological Language Units: Frequency- and Evolution-Aware Tokenization for Protein Language Models</em>.</li>
-        <li>Joint evaluation of tokenization schemes (amino-acid, BPE/Unigram, PUMA/evoBPE, structure-informed) and adaptation regimes (frozen encoder, full fine-tuning, LoRA) across ESM-2, ProtT5 and ProLLaMA.</li></ul>
+        <li>Selected course projects: a Turkish NLP toolkit on the UD-Turkish-BOUN treebank, GRU and CNN autoencoders (Deep Learning), and a protein alignment and phylogeny pipeline (Bioinformatics).</li></ul>
     </div>
 
     <div class="entry">
@@ -378,7 +317,7 @@
     <div class="entry">
       <div class="entry-head"><h3>High school diploma, Mathematics and Physics</h3><span class="date">2014 – 2018</span></div>
       <p class="entry-sub">SAMPAD (NODET: National Organization for Development of Exceptional Talents), selective school for gifted students, Bonab, Iran</p>
-      <ul><li>Ranked 1st in the school.</li></ul>
+      <ul><li>Ranked 1st among the school's Mathematics and Physics students.</li></ul>
     </div>
 
     <h2 style="margin-top:2.2rem">Honors and tests</h2>
@@ -392,12 +331,8 @@
 
     <h2 style="margin-top:2.2rem">Skills</h2>
     <dl class="skills">
-      <dt>ML / DL</dt><dd>PyTorch, Hugging Face Transformers, ESM-2, ProtT5, ProLLaMA, LoRA / PEFT, tokenizer design (BPE, Unigram, PUMA/evoBPE), Weights &amp; Biases, representation analysis (t-SNE), autoencoders, CNNs, GRUs, NumPy, pandas</dd>
-      <dt>NLP</dt><dd>Text classification (offensive content, sentiment), domain LMs (FinBERT), multilingual text processing (Turkish, Persian, Arabic), speech–text data pipelines, web-scale data crawling and cleaning</dd>
-      <dt>Bioinformatics</dt><dd>Protein function, localization and stability prediction (PETA), sequence alignment and phylogeny, single-cell RNA-seq synthetic data and privacy evaluation</dd>
-      <dt>Engineering</dt><dd>Python, Linux, remote GPU workflows (SSH), Miniconda, Git, SQL, Redis, Django, C, C#, VHDL, Selenium, BeautifulSoup, web scraping, Telegram bots</dd>
-      <dt>Knowledge graphs</dt><dd>RDF / RDF-star, SPARQL, Apache Jena Fuseki, SHACL, WebProtégé</dd>
-      <dt>Methods</dt><dd>Genetic algorithms, algorithmic-trading strategies, Agile and Scrum</dd>
+      <dt>ML and NLP</dt><dd>PyTorch, Hugging Face Transformers, fine-tuning and LoRA, tokenizers, protein language models (ESM-2), Weights &amp; Biases</dd>
+      <dt>Programming</dt><dd>Python, Linux and remote GPU servers, Git, SQL, Django</dd>
       <dt>Languages</dt><dd>Persian, Azerbaijani and Turkish (native or bilingual); English (full professional, English-taught M.Sc.); Arabic (elementary)</dd>
     </dl>
   </section>
@@ -408,7 +343,7 @@
     <ul class="plain">
       <li><strong>Board member</strong> (since Oct 2021) and volunteer (since 2018), Pooyandegan-e-Daneshpazhooh-e-Mehr, an educational NGO in Bonab that works against educational inequality.</li>
       <li><strong>Core team</strong>, Iran Innovate (the Iran branch of Innovate Decentral, an international technology community), and organising team of its event Iran Innovate (Innoventiran), 2023 – 2024.</li>
-      <li>Program and seminar coordinator, Astronomical Center of IUST (Mar – Dec 2023).</li>
+      <li>Member of the Astronomical Center of IUST; helped coordinate its events (2023).</li>
       <li>Member of the International Society for Computational Biology (ISCB) and the Italian Association for Computational Linguistics (AILC, 2026).</li>
     </ul>
   </section>
@@ -437,15 +372,6 @@
       var open = btn.getAttribute('aria-expanded') === 'true';
       btn.setAttribute('aria-expanded', String(!open));
       panel.hidden = open;
-    });
-  });
-  document.querySelectorAll('.copy-btn').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var text = btn.parentNode.querySelector('pre').textContent;
-      navigator.clipboard.writeText(text).then(function () {
-        btn.textContent = 'Copied';
-        setTimeout(function () { btn.textContent = 'Copy'; }, 1500);
-      });
     });
   });
 </script>

@@ -240,7 +240,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .pub-btn[aria-expanded="true"] { background: var(--accent-soft); border-color: var(--accent); }
 .pub-note { font-size: 0.92rem; margin: 0.45rem 0 0; color: var(--text); }
 .pub-panel {
-  position: relative;
   margin-top: 0.6rem;
   padding: 0.7rem 0.9rem;
   background: var(--surface);
@@ -250,26 +249,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   font-size: 0.9rem;
 }
 .pub-panel p { margin: 0; }
-.pub-panel pre {
-  margin: 0;
-  padding-right: 3.5rem;
-  white-space: pre-wrap;
-  overflow-wrap: anywhere;
-  font-size: 0.8rem;
-  line-height: 1.5;
-}
-.copy-btn {
-  position: absolute;
-  top: 0.4rem;
-  right: 0.4rem;
-  font: inherit;
-  font-size: 0.78rem;
-  color: var(--muted);
-  background: var(--bg);
-  border: 1px solid var(--rule);
+.entry .pub-btn { font-size: 0.85rem; margin-left: 0.3rem; }
+.rec-img {
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: 4px;
-  padding: 0 0.45rem;
-  cursor: pointer;
+  border: 1px solid var(--rule);
+  margin-bottom: 0.5rem;
 }
 
 /* ---------- entries ---------- */
