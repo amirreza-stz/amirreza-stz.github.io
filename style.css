@@ -203,6 +203,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   border-bottom: 1px solid var(--rule);
 }
 .pubs > li:last-child { border-bottom: 0; }
+
+/* briefly highlight the item an in-page link jumps to */
+.pubs > li:target, .entry:target { animation: target-flash 2s ease-out; }
+@keyframes target-flash {
+  from { background: var(--accent-soft); }
+  to { background: transparent; }
+}
 .thumb {
   width: 120px;
   aspect-ratio: 4 / 3;
