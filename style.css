@@ -317,6 +317,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .plain { margin: 0; padding-left: 1.15rem; }
 .plain li { margin: 0.3rem 0; }
 
+.cta { margin: 0.8rem 0 0; font-size: 0.92rem; color: var(--muted); }
+
+/* ---------- collapsed "Earlier roles" ---------- */
+.earlier summary { cursor: pointer; list-style: none; }
+.earlier summary::-webkit-details-marker { display: none; }
+.earlier-title { font-weight: 600; font-size: 1.02rem; }
+.earlier-title::after { content: " · show"; color: var(--link); font-weight: 400; font-size: 0.88rem; }
+.earlier[open] .earlier-title::after { content: " · hide"; }
+
 footer {
   border-top: 1px solid var(--rule);
   color: var(--muted);
@@ -336,4 +345,20 @@ footer {
   .nav-name { display: none; }
   .pubs > li { grid-template-columns: 1fr; gap: 0.5rem; }
   .thumb { display: none; }
+}
+
+/* ---------- print ---------- */
+@media print {
+  :root {
+    --bg: #fff; --surface: #fff; --text: #000; --muted: #333;
+    --accent: #1f3a5f; --accent-soft: #eef2f7; --rule: #ccc; --link: #1f3a5f;
+  }
+  body { font-size: 11pt; }
+  .nav, .links, .thumb, .pub-btn, .news-more summary, .earlier-title::after { display: none; }
+  .pubs > li { grid-template-columns: 1fr; }
+  main { max-width: none; padding: 0; }
+  section { padding-top: 1.2rem; }
+  .entry, .pubs > li, .callout, .tag-group { break-inside: avoid; }
+  h2 { break-after: avoid; }
+  a { color: inherit; }
 }
