@@ -166,6 +166,23 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 
 /* ---------- interests ---------- */
 .tags { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.8rem; }
+.callout {
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 0.7rem 0.95rem;
+  margin: 1rem 0;
+}
+.callout strong { color: var(--accent); }
+.tag-group {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  margin-top: 0.5rem;
+}
+.tag-group .tags { margin-top: 0; }
+.tag-label { color: var(--muted); font-size: 0.88rem; font-weight: 500; }
 .tag {
   background: var(--surface);
   border: 1px solid var(--rule);
@@ -293,13 +310,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   border-radius: 8px;
   padding: 0.9rem 1rem;
 }
+#beyond .cards { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
 .card h3 { font-size: 0.98rem; margin-bottom: 0.25rem; }
 .card p { margin: 0; font-size: 0.92rem; color: var(--muted); }
-
-/* ---------- skills ---------- */
-.skills { display: grid; grid-template-columns: 9rem 1fr; gap: 0.5rem 1.2rem; margin: 0; }
-.skills dt { font-weight: 600; }
-.skills dd { margin: 0; }
 
 .plain { margin: 0; padding-left: 1.15rem; }
 .plain li { margin: 0.3rem 0; }
@@ -318,9 +331,8 @@ footer {
   .avatar { width: 110px; height: 110px; font-size: 2.3rem; }
   .hero h1 { font-size: 1.7rem; }
   .news li { grid-template-columns: 1fr; gap: 0; }
+  .tag-group { grid-template-columns: 1fr; gap: 0.3rem; margin-top: 0.8rem; }
   .entry-head { flex-direction: column; gap: 0; }
-  .skills { grid-template-columns: 1fr; gap: 0.1rem; }
-  .skills dd { margin-bottom: 0.6rem; }
   .nav-name { display: none; }
   .pubs > li { grid-template-columns: 1fr; gap: 0.5rem; }
   .thumb { display: none; }
